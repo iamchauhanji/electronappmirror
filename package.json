@@ -1,0 +1,31 @@
+{
+  "name": "autoupdaterexample",
+  "version": "2.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder -p always",
+    "package": "electron-builder -p always",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "mechauhan",
+        "repo": "electronAutoUpdate"
+      }
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^20.0.2",
+    "electron-builder": "^23.3.3"
+  },
+  "dependencies": {
+    "electron-log": "^4.4.8",
+    "electron-updater": "^5.2.1"
+  }
+}
